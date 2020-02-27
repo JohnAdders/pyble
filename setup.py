@@ -4,14 +4,14 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="cputemp",
+    name="pyble",
     version="0.1.0",
     author="",
     author_email="",
-    description="A static site generator.",
+    description="Nice little wrapper library that calls dbus to use BLE features",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/Douglas6/cputemp",
+    url="https://github.com/hulloanson/pyble",
     packages=setuptools.find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",

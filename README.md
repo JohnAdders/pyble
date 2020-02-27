@@ -1,3 +1,17 @@
+
+<i>
+
+Brief story:
+
+I forked from https://github.com/lus-robotics/cputemp who forked from https://github.com/Douglas6/cputemp. The latter made a nice wrapper around bluez dbus for use on RPi and the former made a python module out of it.
+
+Why not take it one step further and make it a library module? This is what I'm doing now :)
+
+Content below is yet to be changed!
+<!--TODO: rewrite desc below -->
+-------------------------------------
+</i>
+
 CPUTemp
 ========== 
 Python GATT server example for the Raspberry Pi
