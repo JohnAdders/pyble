@@ -94,18 +94,18 @@ class TestCharacteristic(Characteristic):
 
 
 class TestDescriptor(Descriptor):
-    TEMP_DESCRIPTOR_UUID = "57a1524f-aab4-4162-911a-17d368696b15"
-    TEMP_DESCRIPTOR_VALUE = "Test Value"
+    TEST_DESCRIPTOR_UUID = "57a1524f-aab4-4162-911a-17d368696b15"
+    TEST_DESCRIPTOR_VALUE = "Test Value"
 
     def __init__(self, characteristic):
         Descriptor.__init__(
-            self, self.TEMP_DESCRIPTOR_UUID,
+            self, self.TEST_DESCRIPTOR_UUID,
             ["read"],
             characteristic)
 
     def ReadValue(self, options):
         value = []
-        desc = self.TEMP_DESCRIPTOR_VALUE
+        desc = self.TEST_DESCRIPTOR_VALUE
 
         for c in desc:
             value.append(dbus.Byte(c.encode()))
