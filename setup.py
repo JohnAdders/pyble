@@ -16,10 +16,11 @@ setuptools.setup(
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
-        "Operating System :: OS Independent",
+        "Operating System :: GNU Linux",
     ],
-    install_requires=[
-        'dbus-python',
-        'bletools'
-    ]
+    # TODO: find out a better way to install dependencies
+    # install_requires=[
+    #     'dbus-python',
+    #     'gobject'
+    # ]
 )
